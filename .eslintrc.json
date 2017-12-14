@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "plugins": ["ava"],
+  "extends": ["standard", "plugin:ava/recommended"],
+  "rules": {
+    "prefer-const": ["error", {
+        "destructuring": "all"
+    }],
+    "no-var": "error"
+  }
+}

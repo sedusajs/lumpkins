@@ -1,0 +1,37 @@
+{
+  "name": "@sedusa/lumpkins",
+  "version": "0.0.1",
+  "description": "String interpolation parser",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "nyc ava --verbose",
+    "lint": "eslint ./src ./test",
+    "build": "nearleyc ./src/grammar.ne --out ./src/grammar.js && eslint ./src/grammar.js --fix > /dev/null 2>&1 || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sedusajs/lumpkins.git"
+  },
+  "author": "Kester Everts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sedusajs/lumpkins/issues"
+  },
+  "homepage": "https://github.com/sedusajs/lumpkins#readme",
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-ava": "^4.4.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nyc": "^11.3.0",
+    "tap-nyan": "^1.1.0"
+  },
+  "dependencies": {
+    "moo": "^0.4.3",
+    "nearley": "^2.11.0"
+  }
+}
