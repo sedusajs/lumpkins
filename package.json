@@ -6,7 +6,8 @@
   "scripts": {
     "test": "nyc ava --verbose",
     "lint": "eslint ./src ./test",
-    "build": "nearleyc ./src/grammar.ne --out ./src/grammar.js && eslint ./src/grammar.js --fix > /dev/null 2>&1 || true"
+    "build": "nearleyc ./src/grammar.ne --out ./src/grammar.js && eslint ./src/grammar.js --fix > /dev/null 2>&1 || true",
+    "nearley-test": "nearley-test ./src/grammar"
   },
   "repository": {
     "type": "git",
